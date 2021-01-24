@@ -1,0 +1,1 @@
+Collection of useful data structures & algorithms & coding patterns in Python
