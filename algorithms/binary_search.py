@@ -20,10 +20,9 @@ def BinarySearch(items, target):
 
     helper(items, target, 0, len(items)-1)
 
-
-######
-arr = [2, 3, 4, 10, 40]
-BinarySearch(arr, 4)
-BinarySearch(arr, 3)
-BinarySearch(arr, 1)
-BinarySearch(arr, 2)
+if __name__ == "__main__":
+    arr = [2, 3, 4, 10, 40]
+    BinarySearch(arr, 4)
+    BinarySearch(arr, 3)
+    BinarySearch(arr, 1)
+    BinarySearch(arr, 2)

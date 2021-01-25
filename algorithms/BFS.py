@@ -1,7 +1,3 @@
-vertexList = ['A', 'B', 'C', 'D', 'E', 'F', 'G']
-edgeList = [(0, 1), (1, 2), (1, 3), (3, 4), (4, 5), (1, 6)]
-graphs = (vertexList, edgeList)
-
 # Runtime: O(V+E)
 def BFS(graph, start):
     vertexList, edgeList = graph
@@ -22,5 +18,10 @@ def BFS(graph, start):
         visitedList.append(current)
     return visitedList
 
+if __name__ == "__main__":
 
-print(BFS(graphs, 0))
+    vertexList = ['A', 'B', 'C', 'D', 'E', 'F', 'G']
+    edgeList = [(0, 1), (1, 2), (1, 3), (3, 4), (4, 5), (1, 6)]
+    graphs = (vertexList, edgeList)
+
+    print(BFS(graphs, 0))

@@ -1,8 +1,3 @@
-vertexList = ['0', '1', '2', '3', '4', '5', '6']
-edgeList = [(0, 1), (0, 2), (1, 0), (1, 3), (2, 0), (2, 4),
-            (2, 5), (3, 1), (4, 2), (4, 6), (5, 2), (6, 4)]
-graphs = (vertexList, edgeList)
-
 # Runtime: O(V+E)
 def DFS(graph, start):
     vertexList, edgeList = graph
@@ -23,5 +18,11 @@ def DFS(graph, start):
         visitedList.append(current)
     return visitedList
 
+if __name__ == "__main__":
 
-print(DFS(graphs, 0))
+    vertexList = ['0', '1', '2', '3', '4', '5', '6']
+    edgeList = [(0, 1), (0, 2), (1, 0), (1, 3), (2, 0), (2, 4),
+                (2, 5), (3, 1), (4, 2), (4, 6), (5, 2), (6, 4)]
+    graphs = (vertexList, edgeList)  
+    
+    print(DFS(graphs, 0))
