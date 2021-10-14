@@ -24,19 +24,16 @@ def merge(intervals):
         # compare the "most recent" interval in merged with i
         recent = merged[-1]
 
-        # no overlap
-        if i.start > recent.end:
-            merged.append(i)
-        # partly overlap
-        if i.start <= recent.end and i.end >= recent.end:
-            # create a merged interval
-            m = Interval(recent.start, i.end)
-            # remove recent interval and add m to merged
+        # there is overlap
+        if i.start <= recent.end:
+            # create largest possible "merged" interval
+            m = Interval(recent.start, max(i.end, recent.end))
+            # remove recent interval to make room for m
             merged.pop()
             merged.append(m)
-        # complete overlap
-        if i.start <= recent.end and i.end < recent.end:
-            continue
+        else:
+            # no overlap, just append
+            merged.append(i)
 
     return merged
 
