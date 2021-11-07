@@ -1,6 +1,9 @@
 # Given an array of positive numbers and a positive number k
 # find the maximum sum of any contiguous subarray of size k
 
+# Time: O(N)
+# Space: O(1)
+
 def max_sub_array_of_size_k(k, arr):
 
     win_sum = 0

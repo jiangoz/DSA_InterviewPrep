@@ -1,4 +1,7 @@
-# Given a string, find the length of the longest substring, which has no repeating characters.
+# Given a string, find the length of the longest substring, which has all distinct characters.
+
+# Time: O(N)
+# Space: O(26) = O(1)
 
 def non_repeat_substring(str):
     # TODO: Write your code here
@@ -12,7 +15,8 @@ def non_repeat_substring(str):
         # check if the character is unique or not
         if str[winEnd] in char_indices:
             # char is not unique (already has previous index)
-            # shrink window to one position after the previous index ("get rid" of the previous copy of char)
+            # shrink window to one position after the previous index 
+            # ("get rid" of the previous copy of char)
             winStart = max(char_indices[str[winEnd]]+1, winStart)
 
         # char is unique

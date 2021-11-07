@@ -2,6 +2,9 @@
 # insert a given interval at the correct position and merge all necessary intervals
 # to produce a list that has only mutually exclusive intervals.
 
+# Time: O(N)
+# Space: O(N)
+
 def insert(intervals, new_interval):
     merged = []
     # TODO: Write your code here

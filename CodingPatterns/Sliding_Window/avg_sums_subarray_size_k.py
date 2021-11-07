@@ -1,5 +1,8 @@
 # Given an array, find the average sums of all contiguous subarrays of size K
 
+# Time: O(N)
+# Space: O(N)
+
 def find_averages_of_subarrays(K, arr):
     result = []
     windowSum, windowStart = 0.0, 0

@@ -9,6 +9,8 @@ For simplicity, let’s assume we are passed an integer array
 containing only the sequence numbers, though each number is actually an object.
 """
 
+# Time: O(N)
+# Space: O(1)
 
 def cyclic_sort(nums):
     # TODO: Write your code here

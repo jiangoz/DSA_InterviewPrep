@@ -3,6 +3,8 @@
 # return the sum of the triplet. If there are more than one such triplet,
 # return the sum of the triplet with the smallest sum.
 
+# Time: O(N^2)
+# Space: O(N) required for sorting
 
 def triplet_sum_close_to_target(arr, target_sum):
     arr.sort()

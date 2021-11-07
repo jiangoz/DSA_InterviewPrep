@@ -1,6 +1,9 @@
 # Given an array of sorted numbers and a target sum,
 # find a pair in the array whose sum is equal to the given target.
 
+# Time: O(N)
+# Space: O(N)
+
 def pair_with_targetsum(arr, target_sum):
     start = 0
     end = len(arr) - 1

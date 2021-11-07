@@ -1,6 +1,9 @@
 # Given a list of intervals, merge all the overlapping intervals
 # to produce a list that has only mutually exclusive intervals.
 
+# Time: O(N * log(N))
+# Space: O(N)
+
 class Interval:
     def __init__(self, start, end):
         self.start = start

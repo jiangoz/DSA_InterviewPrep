@@ -2,6 +2,9 @@
 # smallest contiguous subarray whose sum is greater than or equal to ‘S’.
 # Return 0 if no such subarray exists.
 
+# Time: O(N)
+# Space: O(1)
+
 def smallest_subarray_with_given_sum(s, arr):
     # no such subarray exists
     if sum(arr) < s:

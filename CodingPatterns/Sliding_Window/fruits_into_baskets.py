@@ -8,6 +8,8 @@ i.e., you will stop when you have to pick from a third fruit type.
 Write a function to return the maximum number of fruits in both baskets.
 """
 
+# Time: O(N)
+# Space: O(1)
 
 def fruits_into_baskets(fruits):
 

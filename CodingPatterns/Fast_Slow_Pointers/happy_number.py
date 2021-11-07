@@ -3,6 +3,9 @@
 # leads us to number ‘1’. All other (not-happy) numbers will never reach ‘1’.
 # Instead, they will be stuck in a cycle of numbers which does not include ‘1’.
 
+# Time: O(log(N))
+# Space: O(1)
+
 def find_happy_number(num):
     # TODO: Write your code here
 

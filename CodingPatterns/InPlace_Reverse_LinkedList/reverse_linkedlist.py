@@ -1,6 +1,9 @@
 # Given the head of a Singly LinkedList, reverse the LinkedList.
 # Write a function to return the new head of the reversed LinkedList.
 
+# Time: O(N)
+# Space: O(1)
+
 class Node:
     def __init__(self, value, next=None):
         self.value = value

@@ -1,6 +1,9 @@
 # Given an array of intervals representing ‘N’ appointments,
 # find out if a person can attend all the appointments.
 
+# Time: O(N * log(N))
+# Space: O(N) needed for sorting
+
 def can_attend_all_appointments(intervals):
     # TODO: Write your code here
 

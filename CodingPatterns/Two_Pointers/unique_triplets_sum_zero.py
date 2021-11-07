@@ -1,5 +1,8 @@
 # Given an array of unsorted numbers, find all unique triplets in it that add up to zero.
 
+# Time: O(N^2)
+# Space: O(N)
+
 def search_triplets(arr):
     arr.sort()
     triplets = []

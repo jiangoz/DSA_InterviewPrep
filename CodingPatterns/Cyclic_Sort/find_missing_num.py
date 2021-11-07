@@ -1,6 +1,9 @@
 # We are given an array containing ‘n’ distinct numbers taken from the range 0 to ‘n’.
 # Since the array has only ‘n’ numbers out of the total ‘n+1’ numbers, find the missing number.
 
+# Time: O(N)
+# Space: O(1)
+
 def find_missing_number(nums):
     # TODO: Write your code here
 
@@ -28,6 +31,8 @@ def find_missing_number(nums):
 # The array can have duplicates, which means some numbers will be missing.
 # Find all those missing numbers.
 
+# Time: O(N)
+# Space: O(N)
 
 def find_missing_numbers(nums):
     missingNumbers = []

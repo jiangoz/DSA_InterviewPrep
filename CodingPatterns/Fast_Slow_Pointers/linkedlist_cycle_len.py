@@ -1,5 +1,8 @@
 # Given the head of a LinkedList with a cycle, find the length of the cycle.
 
+# Time: O(N)
+# Space: O(1)
+
 class Node:
     def __init__(self, value, next=None):
         self.value = value

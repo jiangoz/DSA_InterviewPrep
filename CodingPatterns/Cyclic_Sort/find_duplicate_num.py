@@ -3,6 +3,9 @@
 # Find that duplicate number without using any extra space.
 # You are, however, allowed to modify the input array.
 
+# Time: O(N)
+# Space: O(1)
+
 def find_duplicate(nums):
     # TODO: Write your code here
 
@@ -27,6 +30,8 @@ def find_duplicate(nums):
 # The array has some numbers appearing twice,
 # find all these duplicate numbers
 
+# Time: O(N)
+# Space: O(N)
 
 def find_all_duplicates(nums):
     duplicateNumbers = []

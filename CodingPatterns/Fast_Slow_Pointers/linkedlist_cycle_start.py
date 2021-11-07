@@ -1,5 +1,9 @@
 # Given the head of a Singly LinkedList that contains a cycle,
 # write a function to find the starting node of the cycle.
+
+# Time: O(N)
+# Space: O(1)
+
 class Node:
     def __init__(self, value, next=None):
         self.value = value

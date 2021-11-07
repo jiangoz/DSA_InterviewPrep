@@ -5,6 +5,9 @@
 # and since our input array also consists of three different numbers,
 # that is why it is called Dutch National Flag problem.
 
+# Time: O(N)
+# Space: O(1)
+
 def dutch_flag_sort(arr: list):
     low = 0
     high = len(arr) - 1
