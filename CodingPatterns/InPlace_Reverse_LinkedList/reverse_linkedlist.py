@@ -18,12 +18,12 @@ class Node:
 
 
 def reverse(head):
-    previous, current = None, head
-    while current:
-        next = current.next  # temporarily store the next node
-        current.next = previous  # reverse the current node
-        previous = current  # before we move to the next node, point previous to the current node
-        current = next  # move onto the next node
+    previous = None
+    while head:
+        next = head.next  # temporarily store the next node
+        head.next = previous  # reverse the current node
+        previous = head  # before we move to the next node, point previous to the current node
+        head = next  # move onto the next node
     return previous
 
 
