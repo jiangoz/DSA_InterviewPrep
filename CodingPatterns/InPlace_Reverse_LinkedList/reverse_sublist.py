@@ -1,6 +1,9 @@
 # Given the head of a LinkedList and two positions ‘p’ and ‘q’,
 # reverse the LinkedList from position ‘p’ to ‘q’
 
+# Time: O(N)
+# Space: O(1)
+
 class Node:
     def __init__(self, value, next=None):
         self.value = value
